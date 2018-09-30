@@ -110,7 +110,7 @@ export default class TagBoxContainer extends Component {
           value={tag}
           onChange={this.tagUpdater()}
           onKeyDown={this.keyHandler()}
-          onBlur={() => this.blurTag()}
+          //onBlur={() => this.blurTag()}
           placeholder={placeholder}
         />
         <Autocomplete
