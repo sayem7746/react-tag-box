@@ -127,9 +127,9 @@ export default class extends Component {
 
     const addNewOption = !foundExactMatch && (
       <li
-        className={classNames('add-new', { considering: !considering })}
+        className={classNames('add-new')}
         onClick={create}
-        onMouseOver={() => consider(null)}
+        //onMouseOver={() => consider(null)}
       >
         <span className="option-text">
           {renderNewOption(input)}
@@ -157,9 +157,10 @@ export default class extends Component {
           key={t.value}
           className={className}
           onClick={() => select(t)}
-          onMouseOver={() => consider(t)}
+          //onMouseOver={() => consider(t)}
         >
           <span className="option-text">
+            <img class="border-radius-100 m-r-xs " height="25" width="25" src="https://development.myzesty.com/thumbs/5911e25b3de737ee645d8faa_UeLRE_150.png" />
             {t.label}
           </span>
         </li>
