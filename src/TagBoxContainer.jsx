@@ -91,7 +91,7 @@ export default class TagBoxContainer extends Component {
 
   render() {
     const consider = (option) => {
-      this.setState({ considering: option })
+      this.setState({ considering: null })
     }
 
     const { tag, considering } = this.state
@@ -123,7 +123,7 @@ export default class TagBoxContainer extends Component {
           create={() => this.createTag()}
           search={(t, input) => search(t, input)}
           exactMatch={(t, input) => exactMatch(t, input)}
-          //considering={considering}
+          considering={considering}
           consider={consider}
         />
       </div>
