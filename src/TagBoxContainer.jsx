@@ -91,6 +91,7 @@ export default class TagBoxContainer extends Component {
 
   render() {
     const consider = (option) => {
+      console.log(option);
       this.setState({ considering: null })
     }
 

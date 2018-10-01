@@ -149,7 +149,7 @@ export default class extends Component {
 
     const matching = matches.map(t => {
       const className = classNames({
-        considering: considering === t
+        //considering: considering === t
       })
 
       return (
