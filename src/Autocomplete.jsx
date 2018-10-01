@@ -127,7 +127,7 @@ export default class extends Component {
 
     const addNewOption = !foundExactMatch && (
       <li
-        className={classNames('add-new')}
+        className={classNames('hello add-new')}
         onClick={create}
         //onMouseOver={() => consider(null)}
       >
@@ -161,7 +161,7 @@ export default class extends Component {
         >
           <span className="option-text">
             <img class="border-radius-100 m-r-xs " height="25" width="25" src="https://development.myzesty.com/thumbs/5911e25b3de737ee645d8faa_UeLRE_150.png" />
-            {t.label}
+            {t.label+"hello world"}
           </span>
         </li>
       )
